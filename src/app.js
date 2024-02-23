@@ -75,7 +75,7 @@ const rpc = require('discord-rpc');
 let client = new rpc.Client({ transport: 'ipc' });
 
 ipcMain.on('new-status-discord', async () => {
-    client.login({ clientId: '1208206233090392134' });
+    client.login({ clientId: '1210407335428620308' });
     client.on('ready', () => {
         client.request('SET_ACTIVITY', {
             pid: process.pid,
@@ -83,7 +83,7 @@ ipcMain.on('new-status-discord', async () => {
                 details: 'Esperando en el launcher',
                 assets: {
                     large_image: 'icon',
-                    large_text: 'Oasis Studio',
+                    large_text: 'XServer Launcher',
                 },
                 instance: false,
                 timestamps: {
@@ -99,7 +99,7 @@ ipcMain.on('new-status-discord-jugando', async (event, status) => {
     console.log(status)
     if(client) await client.destroy();
     client = new rpc.Client({ transport: 'ipc' });
-    client.login({ clientId: '1208206233090392134' });
+    client.login({ clientId: '1210407335428620308' });
     client.on('ready', () => {
         client.request('SET_ACTIVITY', {
             pid: process.pid,
@@ -107,11 +107,11 @@ ipcMain.on('new-status-discord-jugando', async (event, status) => {
                 details: status,
                 assets: {
                     large_image: 'icon',
-                    large_text: 'Oasis Studio',
+                    large_text: 'XServer Launcher',
                 },
                 buttons: [
                     {
-                        label: 'Visitar Oasis Studio',
+                        label: 'Visitar XServer Launcher',
                         url: 'https://latervictor.dev/',
                     },
                ],
@@ -127,7 +127,7 @@ ipcMain.on('new-status-discord-jugando', async (event, status) => {
 ipcMain.on('delete-and-new-status-discord', async () => {
     if(client) client.destroy();
     client = new rpc.Client({ transport: 'ipc' });
-    client.login({ clientId: '1208206233090392134' });
+    client.login({ clientId: '1210407335428620308' });
     client.on('ready', () => {
         client.request('SET_ACTIVITY', {
             pid: process.pid,
@@ -135,7 +135,7 @@ ipcMain.on('delete-and-new-status-discord', async () => {
                 details: 'Esperando en el launcher',
                 assets: {
                     large_image: 'icon',
-                    large_text: 'Oasis Studio',
+                    large_text: 'XServer Launcher',
                 },
                 instance: false,
                 timestamps: {

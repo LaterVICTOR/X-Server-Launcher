@@ -66,7 +66,7 @@ class Index {
                 generateUpdatesFilesForAllChannels: false,
                 appId: preductname,
                 productName: preductname,
-                copyright: 'Copyright © 2020-2023 LaterVICTOR',
+                copyright: 'Copyright © 2023-2024 LaterVICTOR',
                 artifactName: "${productName}-${os}-${arch}.${ext}",
                 extraMetadata: { main: 'app/app.js' },
                 files: ["app/**/*", "package.json", "LICENSE.md"],
@@ -74,13 +74,13 @@ class Index {
                 compression: 'maximum',
                 asar: true,
                 publish: [{
-                        provider: "generic",
-                        url: "https://launcher.latervictor.dev/app",
-                    },
+                    provider: "generic",
+                        url: "https://launcher-xserver.latervictor.dev/app",
+                    }, 
                     {
-                        provider: "github",
-                        releaseType: "release",
-                    }],                
+                    provider: "github",
+                    releaseType: 'release',
+                }],
                 win: {
                     icon: "./app/assets/images/icon.ico",
                     target: [{

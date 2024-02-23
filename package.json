@@ -1,6 +1,6 @@
 {
     "name": "XServ-Launcher",
-    "preductname": "xserv-develope",
+    "preductname": "XServ-Launcher",
     "version": "1.0.0",
     "description": "Creado Por LaterVICTOR & Drolet",
     "main": "src/app.js",
@@ -13,7 +13,7 @@
     "scripts": {
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
-        "build": "node build.js --obf=false --build=platform",
+        "build": "node build.js --obf=true --build=platform",
         "icon": "node build.js --icon=https://launcher-xserver.latervictor.dev/icon.png"
     },
     "license": "CCANC",
