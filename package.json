@@ -1,6 +1,6 @@
 {
-    "name": "oasis-developer",
-    "preductname": "Oasis Launcher",
+    "name": "XServ-Launcher",
+    "preductname": "xserv-develope",
     "version": "1.0.0",
     "description": "Creado Por LaterVICTOR & Drolet",
     "main": "src/app.js",
@@ -14,7 +14,7 @@
         "start": "cross-env-shell NODE_ENV=dev electron .",
         "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
         "build": "node build.js --obf=false --build=platform",
-        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png"
+        "icon": "node build.js --icon=https://launcher-xserver.latervictor.dev/icon.png"
     },
     "license": "CCANC",
     "nodemonConfig": {
