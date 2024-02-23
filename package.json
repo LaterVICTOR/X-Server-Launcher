@@ -1,0 +1,45 @@
+{
+    "name": "oasis-developer",
+    "preductname": "Oasis Launcher",
+    "version": "1.0.0",
+    "description": "Creado Por LaterVICTOR & Drolet",
+    "main": "src/app.js",
+    "url": "https://launcher-xserver.latervictor.dev/",
+    "author": {
+        "name": "LaterVICTOR",
+        "email": "latervictormc@gmail.com",
+        "url": "https://github.com/LaterVICTOR"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "dev": "cross-env-shell DEV_TOOL=open nodemon --exec npm start",
+        "build": "node build.js --obf=false --build=platform",
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png"
+    },
+    "license": "CCANC",
+    "nodemonConfig": {
+        "ext": "js,html,css",
+        "ignore": "**/test"
+    },
+    "dependencies": {
+        "discord-rpc": "^4.0.1",
+        "electron-updater": "^6.1.4",
+        "minecraft-java-core": "^3.8.1",
+        "node-bdd": "^2.0.3",
+        "node-fetch": "^2.7.0",
+        "xml-js": "^1.6.11"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^27.0.4",
+        "electron-builder": "^24.6.4",
+        "javascript-obfuscator": "^4.1.0",
+        "jimp": "^0.22.10",
+        "nodemon": "^3.0.1",
+        "png2icons": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LaterVICTOR/Oasis-Launcher.git"
+    }
+}
